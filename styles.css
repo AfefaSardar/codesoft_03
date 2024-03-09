@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#a6ddff96
+}
+.calculator {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .display {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .buttons button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .buttons button:not(.operator):not(.clear):not(.delete):not(.calculate) {
+    background-color: #ccc;
+    color: #333;
+  }
+  .buttons button:not(.operator):not(.clear):not(.delete):not(.calculate):hover {
+    background-color: #bbb;
+  }
+  .buttons button.operator {
+    background-color: #555;
+    color: white;
+  }
+  .buttons button.delete {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .buttons button.clear {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .buttons button:hover {
+    background-color: #bbb;
+  }
+  
+  .buttons button.operator:hover {
+    background-color: #444;
+  }
+  
+  .buttons button.delete:hover {
+    background-color: #d32f2f;
+  }
+  .buttons button.clear:hover {
+    background-color: #d32f2f;
+  }
+  
+  .buttons button:hover {
+    background-color: #45a049;
+  }
+  
+  
